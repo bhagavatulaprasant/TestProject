@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="AmazonURL" value="https://www.amazon.in/"/>
+  <parameter name="EmailID" value="Your registered mail ID for amazon"/>
+  <parameter name="searchText" value="Java OCA"/>
+  <parameter name="ExecFilePath" value="E:\\geckodriver-v0.26.0-win64\\geckodriver.exe"/>
+  <parameter name="ProductName" value="OCA Java SE Programmer I Certification Guide"/>
+  <parameter name="Value" value="1"/>
+  <parameter name="BrowserDetails" value="webdriver.gecko.driver"/>
+  <parameter name="Password" value="Password"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Amazon.TestCases.AddingToShoppingCart">
+        <methods>
+          <include name="launchSession"/>
+          <include name="addingToProductCart" invocation-numbers="0"/>
+          <include name="closeSession"/>
+        </methods>
+      </class> <!-- com.Amazon.TestCases.AddingToShoppingCart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
